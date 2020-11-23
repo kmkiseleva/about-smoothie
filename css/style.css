@@ -7,6 +7,17 @@ body {
   color: #9a9a9a;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s linear;
+  z-index: 10;
+  background-color: #ffffff;
+  opacity: 0.85;
+}
+
 .wrapper {
   max-width: 1180px;
   width: 100%;
@@ -17,7 +28,7 @@ header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100px;
+  min-height: 100px;
 }
 
 .header__logo {
@@ -56,6 +67,35 @@ header .wrapper {
   color: #fea3ac;
 }
 
+.header__burger {
+  width: 35px;
+  height: 20px;
+  position: relative;
+  display: none;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #433840;
+  position: absolute;
+  right: 0;
+}
+
+.burger__line_first {
+  top: 0;
+}
+
+.burger__line_second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line_third {
+  bottom: 0;
+}
+
 .svg_style {
   position: relative;
 }
@@ -64,6 +104,7 @@ header .wrapper {
   min-height: 400px;
   position: relative;
   background-size: cover;
+  margin-top: 100px;
   margin-right: 50px;
   margin-left: 50px;
   display: flex;
@@ -320,7 +361,7 @@ header .wrapper {
 }
 
 .footer__main {
-  height: 440px;
+  min-height: 440px;
   background: url("../img/footerbg.png") no-repeat center center;
   background-size: cover;
   display: flex;
@@ -413,9 +454,11 @@ header .wrapper {
   background-size: cover;
   display: flex;
   align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-.footer__content {
+.footer__bottom-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -435,3 +478,149 @@ header .wrapper {
 .footer__socials .utube {
   padding-bottom: 2px;
 }
+
+@media screen and (max-width: 767px) {
+  .top_header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header__logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+
+  .left_nav,
+  .right_nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+    right: 15px;
+  }
+
+  .header__burger:hover {
+    opacity: 0.55;
+    cursor: pointer;
+  }
+
+  .page_heading {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about_box {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: url("../img/about_box-2.png") no-repeat center;
+    align-items: flex-start;
+  }
+
+  .about_box .item_data img {
+    display: none;
+  }
+
+  .about_box .item_data article p {
+    color: #000000;
+  }
+
+  .about_box .item_data article {
+    margin-bottom: 15px;
+  }
+
+  .infographic {
+    margin: 0;
+  }
+
+  .infographic .info_list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .item_info .icon img,
+  .infographic .info_list .item_info .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .infographic .info_list .item_info .count {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .infographic .info_list .item_info h4 {
+    font-size: 16px;
+  }
+
+  .team .subtitle {
+    margin-bottom: 15px;
+  }
+
+  .team_member {
+    width: 100%;
+  }
+
+  /* Footer styles */
+
+  .footer__main-content {
+    flex-wrap: wrap;
+    margin: 2%;
+  }
+
+  .footer__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .footer__schedule {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+
+  .footer__bottom {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .footer__bottom-content {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+/* @media screen and (max-width: 969px) {
+.footer__contacts {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+
+  .footer__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 15px;
+  }
+} 
+ @media screen and (max-width: 414px) {
+  .footer__bottom {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .footer__copyright-link {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+  }
+} */
