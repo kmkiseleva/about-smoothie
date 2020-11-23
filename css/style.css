@@ -829,13 +829,10 @@ header .wrapper {
   .team_member:nth-child(4) .data {
     order: 2;
     margin: 0 15px 15px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
   }
 
-  .team_member:nth-child(3) .data p,
-  .team_member:nth-child(4) .data p {
+  .team_member:nth-child(3) .data,
+  .team_member:nth-child(4) .data {
     text-align: left;
   }
 
@@ -843,6 +840,21 @@ header .wrapper {
   .team_member:nth-child(2) {
     margin-right: 15px;
     margin-left: 15px;
+  }
+
+  .team_member:nth-child(1) .data span,
+  .team_member:nth-child(2) .data span {
+    font-weight: 400;
+  }
+
+  .team_member:nth-child(3) .data span,
+  .team_member:nth-child(4) .data span {
+    display: block;
+    font-weight: 400;
+  }
+
+  .team_list {
+    margin-bottom: 0;
   }
 
   .footer__main-content {
