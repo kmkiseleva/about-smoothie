@@ -409,6 +409,7 @@ header .wrapper {
 .footer__main-content {
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .footer__contacts span {
@@ -505,6 +506,16 @@ header .wrapper {
     color: #000000;
   }
 
+  .team_member:nth-child(1) .data p,
+  .team_member:nth-child(2) .data p {
+    margin-right: 100px;
+  }
+
+  .team_member:nth-child(3) .data p,
+  .team_member:nth-child(4) .data p {
+    margin-left: 100px;
+  }
+
   .about_box {
     margin-top: 0;
   }
@@ -593,6 +604,16 @@ header .wrapper {
 
   .about_box .item_data article {
     margin-bottom: 15px;
+  }
+
+  .team_member:nth-child(1) .data p,
+  .team_member:nth-child(2) .data p {
+    margin-right: 0;
+  }
+
+  .team_member:nth-child(3) .data p,
+  .team_member:nth-child(4) .data p {
+    margin-left: 0;
   }
 
   .infographic {
