@@ -591,6 +591,11 @@ header .wrapper {
     margin-bottom: 15px;
   }
 
+  .team_list {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   .team_member:nth-child(1) .data p,
   .team_member:nth-child(2) .data p {
     margin-right: 0;
@@ -859,6 +864,10 @@ header .wrapper {
 
   .footer__main-content {
     margin: 25px 15px;
+  }
+
+  .footer__contacts-info {
+    line-height: 35px;
   }
 
   .footer__insta-feed,
