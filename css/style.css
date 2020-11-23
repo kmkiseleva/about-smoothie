@@ -587,21 +587,6 @@ header .wrapper {
     cursor: pointer;
   }
 
-  .about_box {
-    margin-top: 0;
-    margin-bottom: 0;
-    background: url("../img/about_box-2.png") no-repeat center;
-    align-items: flex-start;
-  }
-
-  .about_box .item_data img {
-    display: none;
-  }
-
-  .about_box .item_data article p {
-    color: #000000;
-  }
-
   .about_box .item_data article {
     margin-bottom: 15px;
   }
@@ -693,7 +678,23 @@ header .wrapper {
 }
 
 @media screen and (max-width: 930px) {
-  .footer__schedule {
+  .about_box {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: url("../img/about_box-2.png") no-repeat center;
+    align-items: flex-start;
+  }
+
+  .about_box .item_data img {
+    display: none;
+  }
+
+  .about_box .item_data article p {
+    color: #000000;
+  }
+
+  .footer__schedule,
+  .footer__contacts {
     margin-bottom: 25px;
   }
 
@@ -716,5 +717,89 @@ header .wrapper {
 
   .footer__contacts {
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page_heading.about_page {
+    background: transparent url("../img/about_header-2.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .page_heading h2 {
+    text-align: center;
+  }
+
+  .about_box {
+    flex-wrap: wrap;
+  }
+
+  .about_box .item_data {
+    margin-bottom: 15px;
+  }
+
+  .about_box .item_data:first-child,
+  .about_box .item_data:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .infographic .info_list {
+    flex-wrap: wrap;
+  }
+
+  .infographic .info_list .item_info {
+    margin: 0;
+    padding: 0;
+    width: 48%;
+  }
+
+  .info_list .item_info:nth-child(1),
+  .info_list .item_info:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .info_list .item_info:nth-child(3),
+  .info_list .item_info:nth-child(4) {
+    margin-bottom: 100px;
+  }
+
+  .item_info .icon img,
+  .infographic .info_list .item_info .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .team_list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .team .box_title {
+    font-size: 35px;
+    line-height: 30px;
+  }
+
+  .footer__main-content {
+    margin: 25px 15px;
+  }
+
+  .footer__insta-feed,
+  .footer__insta-images {
+    width: 100%;
+  }
+
+  .footer__insta-feed-image:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .footer__insta-feed-image img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .footer__bottom {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
