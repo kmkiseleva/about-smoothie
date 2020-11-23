@@ -530,10 +530,6 @@ header .wrapper {
   .team_member {
     width: 100%;
   }
-
-  .team_member .data p {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -631,11 +627,22 @@ header .wrapper {
     width: 100%;
   }
 
+  .team_member .image img {
+    width: 200px;
+    height: 200px;
+    margin-left: -150px;
+  }
+
+  .team_member:nth-child(3) .image img,
+  .team_member:nth-child(4) .image img {
+    margin-right: -150px;
+  }
+
   /* Footer styles */
 
   .footer__main-content {
     flex-wrap: wrap;
-    margin: 3%;
+    margin: 5%;
   }
 
   .footer__title {
@@ -671,7 +678,7 @@ header .wrapper {
 
   .footer__main-content {
     flex-wrap: wrap;
-    margin: 3%;
+    margin: 5%;
   }
 }
 
