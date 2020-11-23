@@ -253,6 +253,11 @@ header .wrapper {
   color: #ffffff;
 }
 
+.infographic .info_list .item_info h4:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 .team .box_title {
   font-weight: bold;
   font-size: 50px;
@@ -307,6 +312,11 @@ header .wrapper {
   line-height: 37px;
   color: #ffffff;
   display: block;
+}
+
+.data .name:hover {
+  opacity: 0.75;
+  cursor: pointer;
 }
 
 .data .position {
