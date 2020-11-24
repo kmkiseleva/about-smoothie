@@ -768,8 +768,6 @@ header .wrapper {
 
 @media screen and (max-width: 930px) {
   .about_box {
-    margin-top: 0;
-    margin-bottom: 0;
     background: url("../img/about_box-2.png") no-repeat center;
     align-items: flex-start;
   }
