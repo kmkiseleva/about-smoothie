@@ -525,7 +525,8 @@ header .wrapper {
   }
 
   .infographic {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .infographic .info_list {
@@ -689,7 +690,8 @@ header .wrapper {
   }
 
   .infographic {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .infographic .info_list {
